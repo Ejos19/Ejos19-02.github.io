@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen de Fauna</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="logo">
+      <img
+        src="asset/Osiniki4k.png"
+        alt="LogoPersonalizado"
+        width="300"
+        height="110"
+      />
+    </div>
+    <h1>Examen de Fauna</h1>
+    <p>Escribe la respuesta correcta:</p>
+
+    <ol id="preguntas">
+      <li data-ponderacion="4">
+        Las **(ballenas/peces)** son mamíferos marinos que respiran aire a
+        través de orificios nasales.
+        <input type="text" id="respuesta1" />
+        <span id="feedback1"></span>
+      </li>
+      <li data-ponderacion="4">
+        Las **(serpientes/lagartijas)** son reptiles sin patas que se arrastran
+        por el suelo.
+        <input type="text" id="respuesta2" />
+        <span id="feedback2"></span>
+      </li>
+      <li data-ponderacion="4">
+        Las **(abejas/mariposas)** son insectos con alas que se alimentan del
+        néctar de las flores.
+        <input type="text" id="respuesta3" />
+        <span id="feedback3"></span>
+      </li>
+      <li data-ponderacion="4">
+        Los **(pinguinos/avestruces)** son aves que no pueden volar, pero son
+        excelentes nadadores.
+        <input type="text" id="respuesta4" />
+        <span id="feedback4"></span>
+      </li>
+      <li data-ponderacion="4">
+        Los **(osos/caballos)** son mamíferos cuadrúpedos que viven en tierra
+        firme.
+        <input type="text" id="respuesta5" />
+        <span id="feedback5"></span>
+      </li>
+    </ol>
+
+    <button class="animated-button" onclick="corregirExamen()">
+      <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+        ></path>
+      </svg>
+      <span class="text">Corregir</span>
+      <span class="circle"></span>
+      <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+        ></path>
+      </svg>
+    </button>
+
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
